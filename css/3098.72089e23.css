@@ -1,0 +1,128 @@
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link[data-v-aeee8b2e] {
+  color: #409eff;
+}
+.text-link[data-v-aeee8b2e]:hover {
+  color: #5cb6ff;
+}
+.text-hover[data-v-aeee8b2e]:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand[data-v-aeee8b2e] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib[data-v-aeee8b2e] {
+  display: inline-block;
+}
+.di[data-v-aeee8b2e] {
+  display: inline;
+}
+.ellipsis[data-v-aeee8b2e] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag[data-v-aeee8b2e] {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag[data-v-aeee8b2e] {
+  margin-left: 5px;
+}
+.common-tag.green-tag[data-v-aeee8b2e] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag[data-v-aeee8b2e] {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag[data-v-aeee8b2e] {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag[data-v-aeee8b2e] {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag[data-v-aeee8b2e] {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+.knowledge-graph > .header[data-v-aeee8b2e] {
+  background-color: white;
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 0 2%;
+  font-family: '华文琥珀', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  color: #546784;
+}
+.knowledge-graph > .header img[data-v-aeee8b2e] {
+  height: 70%;
+}
+.knowledge-graph > .main .side-form h3[data-v-aeee8b2e] {
+  line-height: 50px;
+  border-bottom: 1px solid #e4e4e4;
+  padding-left: 15px;
+}
+.knowledge-graph > .main .side-form .el-form-item[data-v-aeee8b2e] {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 15px;
+  margin-bottom: 0;
+}
+.knowledge-graph > .main .side-form .el-form-item .el-select[data-v-aeee8b2e] {
+  width: 100%;
+}
+.knowledge-graph > .main .d3-wrapper[data-v-aeee8b2e] {
+  display: inline-block;
+  width: 100%;
+  height: calc(100vh - (60px + 50px + 80px));
+  vertical-align: top;
+}
+.knowledge-graph > .main .d3-wrapper .d3[data-v-aeee8b2e] {
+  height: calc(100% - 60px);
+  min-height: 600px;
+  position: relative;
+  width: 80%;
+  margin: 30px auto;
+}
+.knowledge-graph > .main .d3-wrapper .d3 .node[data-v-aeee8b2e] {
+  display: inline-block;
+  width: 130px;
+  border: 1px solid lightgrey;
+  position: absolute;
+  text-align: center;
+  background-color: #008BF8;
+  color: white;
+  border-radius: 5px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.knowledge-graph > .main .d3-wrapper .d3 .node .title[data-v-aeee8b2e] {
+  height: 25px;
+  line-height: 25px;
+  font-weight: bolder;
+}
+.knowledge-graph > .main .d3-wrapper .d3 .node .value[data-v-aeee8b2e] {
+  height: 15px;
+  line-height: 15px;
+}
+.knowledge-graph > .main .d3-wrapper .d3 .node#node_004[data-v-aeee8b2e],
+.knowledge-graph > .main .d3-wrapper .d3 .node#node_011[data-v-aeee8b2e] {
+  background-color: white;
+  color: black;
+}
+

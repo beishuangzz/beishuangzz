@@ -1,0 +1,147 @@
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link[data-v-22ff6f18] {
+  color: #409eff;
+}
+.text-link[data-v-22ff6f18]:hover {
+  color: #5cb6ff;
+}
+.text-hover[data-v-22ff6f18]:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand[data-v-22ff6f18] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib[data-v-22ff6f18] {
+  display: inline-block;
+}
+.di[data-v-22ff6f18] {
+  display: inline;
+}
+.ellipsis[data-v-22ff6f18] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag[data-v-22ff6f18] {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag[data-v-22ff6f18] {
+  margin-left: 5px;
+}
+.common-tag.green-tag[data-v-22ff6f18] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag[data-v-22ff6f18] {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag[data-v-22ff6f18] {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag[data-v-22ff6f18] {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag[data-v-22ff6f18] {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+.knowledge-subject-detail .side[data-v-22ff6f18] {
+  display: inline-block;
+  width: 50%;
+  border: 1px solid #E4E7ED;
+  vertical-align: top;
+}
+.knowledge-subject-detail .side .container[data-v-22ff6f18] {
+  height: 400px;
+  border-bottom: 1px solid #E4E7ED;
+  padding: 10px;
+}
+.knowledge-subject-detail .side .container header[data-v-22ff6f18] {
+  font-weight: bolder;
+}
+.knowledge-subject-detail .side .container header[data-v-22ff6f18]:before {
+  display: inline;
+  content: '▍';
+  color: #0099ff;
+  line-height: 40px;
+}
+.knowledge-subject-detail .side .container .content[data-v-22ff6f18] {
+  padding: 10px;
+}
+.knowledge-subject-detail .side .footer[data-v-22ff6f18] {
+  height: 50px;
+  line-height: 50px;
+}
+.knowledge-subject-detail .left[data-v-22ff6f18] {
+  margin-right: -1px;
+}
+.knowledge-subject-detail .left .container .content .knowledge-list li[data-v-22ff6f18] {
+  margin-bottom: 5px;
+}
+.knowledge-subject-detail .left .container .content .knowledge-list li .field-name[data-v-22ff6f18] {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+}
+.knowledge-subject-detail .left .container .content .knowledge-list li .field-name > span[data-v-22ff6f18] {
+  display: inline-block;
+}
+.knowledge-subject-detail .left .container .content .knowledge-list li .field-name .icon[data-v-22ff6f18] {
+  width: 20px;
+}
+.knowledge-subject-detail .left .container .content .knowledge-list li .field-name .name[data-v-22ff6f18] {
+  font-weight: bolder;
+  width: calc(100% - 20px);
+  text-align: justify;
+  text-justify: distribute-all-lines;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  padding-right: 20px;
+}
+.knowledge-subject-detail .left .container .content .knowledge-list li .field-value[data-v-22ff6f18] {
+  display: inline-block;
+  width: calc(100% - 100px);
+  vertical-align: top;
+}
+.knowledge-subject-detail .left .container .content .knowledge-list li .field-value .el-tag[data-v-22ff6f18] {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  color: #606266;
+}
+.knowledge-subject-detail .left .footer ul li[data-v-22ff6f18] {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.knowledge-subject-detail .left .footer ul li[data-v-22ff6f18]:first-of-type {
+  border-right: 1px solid #E4E7ED;
+}
+.knowledge-subject-detail .right .container .content[data-v-22ff6f18] {
+  height: calc(100% - 40px);
+  padding: 0;
+}
+.knowledge-subject-detail .right .container .content .chart[data-v-22ff6f18] {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  vertical-align: top;
+}
+.knowledge-subject-detail .right .footer[data-v-22ff6f18] {
+  text-align: center;
+}
+.knowledge-subject-detail .right .footer a[data-v-22ff6f18] {
+  margin-left: 15px;
+}
+

@@ -1,0 +1,119 @@
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link[data-v-067c0b4c] {
+  color: #409eff;
+}
+.text-link[data-v-067c0b4c]:hover {
+  color: #5cb6ff;
+}
+.text-hover[data-v-067c0b4c]:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand[data-v-067c0b4c] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib[data-v-067c0b4c] {
+  display: inline-block;
+}
+.di[data-v-067c0b4c] {
+  display: inline;
+}
+.ellipsis[data-v-067c0b4c] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag[data-v-067c0b4c] {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag[data-v-067c0b4c] {
+  margin-left: 5px;
+}
+.common-tag.green-tag[data-v-067c0b4c] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag[data-v-067c0b4c] {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag[data-v-067c0b4c] {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag[data-v-067c0b4c] {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag[data-v-067c0b4c] {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+.contract-template-detail .template-clause.el-card.full-screen[data-v-067c0b4c] {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: white;
+}
+.contract-template-detail .template-clause.el-card[data-v-067c0b4c] .el-card__header {
+  padding: 10px 20px;
+  line-height: 36px;
+}
+.contract-template-detail .template-clause.el-card[data-v-067c0b4c] .el-card__header ul {
+  text-align: right;
+}
+.contract-template-detail .template-clause.el-card[data-v-067c0b4c] .el-card__header ul li {
+  cursor: pointer;
+  display: inline-block;
+  border-left: 1px solid lightgrey;
+  padding: 0 20px;
+}
+.contract-template-detail .template-clause.el-card[data-v-067c0b4c] .el-card__header ul li i {
+  margin-right: 5px;
+}
+.contract-template-detail .template-clause.el-card[data-v-067c0b4c] .el-card__body .clause-list .clause-item + .clause-item {
+  margin-top: 6px;
+}
+.contract-template-detail .template-clause.el-card[data-v-067c0b4c] .el-card__body .clause-list .clause-item:hover .clause-content {
+  border: 1px solid #3366cc;
+}
+.contract-template-detail .template-clause.el-card[data-v-067c0b4c] .el-card__body .clause-list .clause-item:hover .clause-content .copy-clause {
+  visibility: visible;
+  cursor: pointer;
+}
+.contract-template-detail .template-clause.el-card[data-v-067c0b4c] .el-card__body .clause-list .clause-item:hover .clause-content .copy-clause i {
+  margin-right: 5px;
+}
+.contract-template-detail .template-clause.el-card[data-v-067c0b4c] .el-card__body .clause-list .clause-item .clause-num {
+  display: inline-block;
+  width: 80px;
+  vertical-align: top;
+}
+.contract-template-detail .template-clause.el-card[data-v-067c0b4c] .el-card__body .clause-list .clause-item .clause-content {
+  border: 1px solid white;
+  border-radius: 3px;
+  transition: border-color 300ms ease-in-out;
+  display: inline-block;
+  padding: 5px 5px 0 5px;
+  width: calc(100% - 80px);
+  line-height: 23px;
+}
+.contract-template-detail .template-clause.el-card[data-v-067c0b4c] .el-card__body .clause-list .clause-item .clause-content .copy-clause {
+  text-align: right;
+  line-height: 30px;
+  color: #3366cc;
+  visibility: hidden;
+  padding-right: 10px;
+}
+

@@ -1,0 +1,73 @@
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link[data-v-50651972] {
+  color: #409eff;
+}
+.text-link[data-v-50651972]:hover {
+  color: #5cb6ff;
+}
+.text-hover[data-v-50651972]:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand[data-v-50651972] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib[data-v-50651972] {
+  display: inline-block;
+}
+.di[data-v-50651972] {
+  display: inline;
+}
+.ellipsis[data-v-50651972] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag[data-v-50651972] {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag[data-v-50651972] {
+  margin-left: 5px;
+}
+.common-tag.green-tag[data-v-50651972] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag[data-v-50651972] {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag[data-v-50651972] {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag[data-v-50651972] {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag[data-v-50651972] {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+.knowledge-graph .common-list .el-table .el-table__body-wrapper .el-table__body tbody .el-table__row .header[data-v-50651972] {
+  margin-bottom: 5px;
+}
+.knowledge-graph .common-list .el-table .el-table__body-wrapper .el-table__body tbody .el-table__row .header .el-tag + .el-tag[data-v-50651972] {
+  margin-left: 5px;
+}
+.knowledge-graph .common-list .el-table .el-table__body-wrapper .el-table__body tbody .el-table__row .content[data-v-50651972] {
+  margin-bottom: 5px;
+  color: black;
+}
+.knowledge-graph .common-list .el-table .el-table__body-wrapper .el-table__body tbody .el-table__row .relation[data-v-50651972] {
+  margin-top: 5px;
+  color: #5E5E5E;
+}
+

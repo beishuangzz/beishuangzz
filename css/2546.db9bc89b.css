@@ -1,0 +1,133 @@
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link[data-v-20221702] {
+  color: #409eff;
+}
+.text-link[data-v-20221702]:hover {
+  color: #5cb6ff;
+}
+.text-hover[data-v-20221702]:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand[data-v-20221702] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib[data-v-20221702] {
+  display: inline-block;
+}
+.di[data-v-20221702] {
+  display: inline;
+}
+.ellipsis[data-v-20221702] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag[data-v-20221702] {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag[data-v-20221702] {
+  margin-left: 5px;
+}
+.common-tag.green-tag[data-v-20221702] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag[data-v-20221702] {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag[data-v-20221702] {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag[data-v-20221702] {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag[data-v-20221702] {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+.form-page .sample-maintenance .el-form .el-form-item.with-button .el-input[data-v-20221702] {
+  width: calc(100% - 85px);
+}
+.form-page .sample-maintenance .el-form .el-form-item.with-button .el-button[data-v-20221702] {
+  margin-left: 5px;
+}
+.form-page .sample-collection-record .sample-collection .form-group-content ul.sample-collection-list li.sample-collection-item .toggle-icon[data-v-20221702] {
+  border: 1px solid #DCDFE6;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.form-page .sample-collection-record .sample-collection .form-group-content ul.sample-collection-list li.sample-collection-item .toggle-icon[data-v-20221702]:hover {
+  color: #5cb6ff;
+}
+.form-page .sample-collection-record .sample-collection .form-group-content ul.sample-collection-list li.sample-collection-item .process-name[data-v-20221702] {
+  line-height: 40px;
+  font-weight: bolder;
+}
+.form-page .sample-collection-record .sample-collection .form-group-content ul.sample-collection-list li.sample-collection-item .process-name > span[data-v-20221702] {
+  vertical-align: middle;
+}
+.form-page .sample-collection-record .sample-collection .form-group-content ul.sample-collection-list li.sample-collection-item ul.process-content[data-v-20221702] {
+  padding-left: 32px;
+}
+.form-page .sample-collection-record .sample-collection .form-group-content ul.sample-collection-list li.sample-collection-item ul.process-content > li[data-v-20221702] {
+  line-height: 40px;
+}
+.form-page .sample-collection-record .sample-collection .form-group-content ul.sample-collection-list li.sample-collection-item ul.process-content > li .node-info > *[data-v-20221702] {
+  display: inline-block;
+  width: 25%;
+}
+.form-page .sample-collection-record .sample-collection .form-group-content ul.sample-collection-list li.sample-collection-item ul.process-content > li .node-info .node-name[data-v-20221702] {
+  font-weight: bolder;
+}
+.form-page .sample-collection-record .sample-collection .form-group-content ul.sample-collection-list li.sample-collection-item ul.process-content > li .node-info .node-handle-user[data-v-20221702] {
+  font-weight: bolder;
+}
+.form-page .sample-collection-record .sample-collection .form-group-content ul.sample-collection-list li.sample-collection-item ul.process-content > li .node-detail[data-v-20221702] {
+  padding-left: 32px;
+}
+.form-page .sample-collection-record .sample-collection .form-group-content ul.sample-collection-list li.sample-collection-item ul.process-content > li .node-detail > div[data-v-20221702] {
+  background-color: #f5f7fc;
+  border: 1px solid #DCDFE6;
+  border-radius: 3px;
+  padding: 10px;
+  line-height: 23px;
+}
+.form-page .sample-collection-record .file-collection .form-group-content .version-comparison[data-v-20221702] {
+  margin-bottom: 10px;
+}
+.form-page .sample-collection-record .file-collection .form-group-content .version-comparison .el-select[data-v-20221702] {
+  width: unset;
+}
+.form-page .sample-collection-record .file-collection .form-list[data-v-20221702]:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.form-page .sample-collection-record .file-collection .form-list td.file > *[data-v-20221702] {
+  vertical-align: middle;
+}
+.form-page .sample-collection-record .file-collection .form-list td.file .file-icon[data-v-20221702] {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+}
+.form-page .sample-collection-record .file-collection .form-list td.file .file-icon img[data-v-20221702] {
+  width: 100%;
+}
+

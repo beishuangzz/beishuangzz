@@ -1,0 +1,65 @@
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link[data-v-1aa81a2f] {
+  color: #409eff;
+}
+.text-link[data-v-1aa81a2f]:hover {
+  color: #5cb6ff;
+}
+.text-hover[data-v-1aa81a2f]:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand[data-v-1aa81a2f] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib[data-v-1aa81a2f] {
+  display: inline-block;
+}
+.di[data-v-1aa81a2f] {
+  display: inline;
+}
+.ellipsis[data-v-1aa81a2f] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag[data-v-1aa81a2f] {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag[data-v-1aa81a2f] {
+  margin-left: 5px;
+}
+.common-tag.green-tag[data-v-1aa81a2f] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag[data-v-1aa81a2f] {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag[data-v-1aa81a2f] {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag[data-v-1aa81a2f] {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag[data-v-1aa81a2f] {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+.knowledge-graph .common-list .el-table .risk-source[data-v-1aa81a2f] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.knowledge-graph .common-list .el-table .risk-source + .risk-source[data-v-1aa81a2f] {
+  margin-left: 5px;
+}
+

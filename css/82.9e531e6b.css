@@ -1,0 +1,110 @@
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link[data-v-30ed9eed] {
+  color: #409eff;
+}
+.text-link[data-v-30ed9eed]:hover {
+  color: #5cb6ff;
+}
+.text-hover[data-v-30ed9eed]:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand[data-v-30ed9eed] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib[data-v-30ed9eed] {
+  display: inline-block;
+}
+.di[data-v-30ed9eed] {
+  display: inline;
+}
+.ellipsis[data-v-30ed9eed] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag[data-v-30ed9eed] {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag[data-v-30ed9eed] {
+  margin-left: 5px;
+}
+.common-tag.green-tag[data-v-30ed9eed] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag[data-v-30ed9eed] {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag[data-v-30ed9eed] {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag[data-v-30ed9eed] {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag[data-v-30ed9eed] {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+.risk-occurrence-detail .litigation-info .litigation-info-list .litigation-info-item[data-v-30ed9eed] {
+  display: inline-block;
+  line-height: 40px;
+  padding-right: 20px;
+}
+.risk-occurrence-detail .litigation-info .litigation-info-list .litigation-info-item + .litigation-info-item[data-v-30ed9eed] {
+  border-left: 1px solid lightgrey;
+  padding-left: 20px;
+}
+.risk-occurrence-detail .litigation-info .litigation-info-list .litigation-info-item .litigation-info-item-name[data-v-30ed9eed] {
+  display: inline-block;
+  padding-right: 20px;
+}
+.risk-occurrence-detail .litigation-info .litigation-info-list .litigation-info-item .litigation-info-item-content[data-v-30ed9eed] {
+  display: inline-block;
+}
+.risk-occurrence-detail .case-summary .el-col[data-v-30ed9eed] {
+  height: 100%;
+}
+.risk-occurrence-detail .case-summary .el-col .el-card[data-v-30ed9eed] {
+  height: 100%;
+}
+.risk-occurrence-detail .case-summary .el-col .el-card .case-summary-list .case-summary-item + .case-summary-item[data-v-30ed9eed] {
+  margin-top: 10px;
+}
+.risk-occurrence-detail .case-summary .el-col .el-card .case-summary-list .case-summary-item .case-summary-title[data-v-30ed9eed] {
+  line-height: 30px;
+}
+.risk-occurrence-detail .case-summary .el-col .el-card .case-summary-list .case-summary-item .case-summary-detail[data-v-30ed9eed] {
+  line-height: 22px;
+}
+.risk-occurrence-detail .case-summary .clause-context[data-v-30ed9eed] {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.risk-occurrence-detail .case-summary .clause-context .el-card[data-v-30ed9eed] {
+  height: 100%;
+}
+.risk-occurrence-detail .case-summary .clause-context .el-card[data-v-30ed9eed] .el-card__body {
+  height: 100%;
+}
+.risk-occurrence-detail .case-summary .clause-context .el-card[data-v-30ed9eed] .el-card__body .open-line-height {
+  height: 100%;
+  text-align: center;
+}
+.risk-occurrence-detail .case-summary .clause-context .el-card[data-v-30ed9eed] .el-card__body .open-line-height span {
+  vertical-align: middle;
+  display: inline-block;
+  color: #20A0FF;
+}
+

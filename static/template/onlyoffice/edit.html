@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- 双核浏览器, 默认启用webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- 若是ie浏览器, 则以最高效模式浏览 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- window默认缩放1.0 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- 防止浏览器缓存, 每次都去前端服务器验证文件可用性 -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>ONLYOFFICE</title>
+    
+    <style type="text/css">
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .form {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    </style>
+    <script>
+    var docEditor;
+
+    var innerAlert = function(message) {
+        if (console && console.log)
+            console.log(message);
+    };
+
+    var onAppReady = function() {
+        innerAlert("Document editor ready");
+    };
+
+    var onDocumentStateChange = function(event) {
+        var title = document.title.replace(/\*$/g, "");
+        document.title = title + (event.data ? "*" : "");
+    };
+
+    var onRequestEditRights = function() {
+        location.href = location.href.replace(RegExp("mode=view\&?", "i"), "");
+    };
+
+    var onError = function(event) {
+        if (event)
+            innerAlert(event.data);
+    };
+
+    var onOutdatedVersion = function(event) {
+        location.reload(true);
+    };
+
+    var replaceActionLink = function(href, linkParam) {
+        var link;
+        var actionIndex = href.indexOf("&actionLink=");
+        if (actionIndex != -1) {
+            var endIndex = href.indexOf("&", actionIndex + "&actionLink=".length);
+            if (endIndex != -1) {
+                link = href.substring(0, actionIndex) + href.substring(endIndex) + "&actionLink=" + encodeURIComponent(linkParam);
+            } else {
+                link = href.substring(0, actionIndex) + "&actionLink=" + encodeURIComponent(linkParam);
+            }
+        } else {
+            link = href + "&actionLink=" + encodeURIComponent(linkParam);
+        }
+        return link;
+    }
+
+    var onMakeActionLink = function(event) {
+        var actionData = event.data;
+        var linkParam = JSON.stringify(actionData);
+        docEditor.setActionLink(replaceActionLink(location.href, linkParam));
+    };
+
+    var onMetaChange = function(event) {
+        var favorite = !!event.data.favorite;
+        var title = document.title.replace(/^\☆/g, "");
+        document.title = (favorite ? "☆" : "") + title;
+        docEditor.setFavorite(favorite);
+    };
+
+    var onRequestInsertImage = function(event) {};
+
+    var onRequestCompareFile = function() {};
+
+    var onRequestMailMergeRecipients = function(event) {};
+
+    var config = {
+        "type": "desktop",
+        "mode": "review",
+        /*"type": "embedded",
+        "mode": "embedded",*/
+        "documentType": "word",
+        "document": {
+            /*"title": "文档 (1).docx",
+            "url": "http://10.120.1.132:8080/app_data/10.120.1.132/%E5%A8%89%E6%9B%9E%E7%B7%A5%E6%B5%9C%E5%AC%AA%E5%A7%9F%E7%BB%A0%EF%BC%84%E6%82%8A%E7%BB%AF%E8%8D%A4%E7%B2%BA%E6%B5%9C%E5%B1%BE%E6%B9%A1%E6%A4%A4%E5%9C%AD%E6%B4%B0%E6%BF%AE%E6%97%80%E5%A2%AD%E5%AF%AE%EF%BF%BD%E9%8D%99%E6%88%9D%E6%82%8E%E9%8D%9A%EF%BF%BD%20%281%29.docx",
+            "urlUser": "http://10.120.1.132:8080/app_data/10.120.1.132/%E5%A8%89%E6%9B%9E%E7%B7%A5%E6%B5%9C%E5%AC%AA%E5%A7%9F%E7%BB%A0%EF%BC%84%E6%82%8A%E7%BB%AF%E8%8D%A4%E7%B2%BA%E6%B5%9C%E5%B1%BE%E6%B9%A1%E6%A4%A4%E5%9C%AD%E6%B4%B0%E6%BF%AE%E6%97%80%E5%A2%AD%E5%AF%AE%EF%BF%BD%E9%8D%99%E6%88%9D%E6%82%8E%E9%8D%9A%EF%BF%BD%20%281%29.docx",
+            "fileType": "docx",
+            "key": "1652994797",*/
+            "info": {},
+            "permissions": {
+                "comment": true,
+                "download": true,
+                "edit": false,
+                "fillForms": true,
+                "modifyFilter": true,
+                "modifyContentControl": true,
+                "review": true
+            }
+        },
+        "editorConfig": {
+            "mode": "edit",
+
+            /*"callbackUrl": "http://10.120.1.132:8080/IndexServlet?type\u003dtrack\u0026fileName\u003d%E5%A8%89%E6%9B%9E%E7%B7%A5%E6%B5%9C%E5%AC%AA%E5%A7%9F%E7%BB%A0%EF%BC%84%E6%82%8A%E7%BB%AF%E8%8D%A4%E7%B2%BA%E6%B5%9C%E5%B1%BE%E6%B9%A1%E6%A4%A4%E5%9C%AD%E6%B4%B0%E6%BF%AE%E6%97%80%E5%A2%AD%E5%AF%AE%EF%BF%BD%E9%8D%99%E6%88%9D%E6%82%8E%E9%8D%9A%EF%BF%BD+%281%29.docx\u0026userAddress\u003d10.120.1.132",*/
+            "lang": "zh",
+            "user": {
+                /*"id": "uid-1",
+                "name": "John Smith"*/
+            },
+            "customization": {
+                "goback": {
+                    /*"url": "http://10.120.1.132:8080/IndexServlet"*/
+                },
+                "autosave": false,
+                "forcesave": true,
+                "submitForm": false
+            }
+        }
+    };
+
+    config.width = "100%";
+    config.height = "100%";
+    config.events = {
+        "onAppReady": onAppReady,
+        "onDocumentStateChange": onDocumentStateChange,
+        'onRequestEditRights': onRequestEditRights,
+        "onError": onError,
+        "onOutdatedVersion": onOutdatedVersion,
+        "onMakeActionLink": onMakeActionLink,
+        "onMetaChange": onMetaChange,
+        "onRequestInsertImage": onRequestInsertImage,
+        "onRequestCompareFile": onRequestCompareFile,
+        "onRequestMailMergeRecipients": onRequestMailMergeRecipients,
+    };
+
+    config.events['onRequestHistory'] = function() {
+        /*docEditor.refreshHistory({ "history": [{ "created": "2021-06-10 11:33:02", "version": 1, "user": { "name": "John Smith", "id": "uid-1" }, "key": "1652994797" }], "currentVersion": 1 });*/
+    };
+    config.events['onRequestHistoryData'] = function(event) {
+        /*var ver = event.data;
+        var histData = {
+            "0": {
+                "version": 1,
+                "key": "1652994797",
+                "url": "http://10.120.1.132:8080/app_data/10.120.1.132/%E5%A8%89%E6%9B%9E%E7%B7%A5%E6%B5%9C%E5%AC%AA%E5%A7%9F%E7%BB%A0%EF%BC%84%E6%82%8A%E7%BB%AF%E8%8D%A4%E7%B2%BA%E6%B5%9C%E5%B1%BE%E6%B9%A1%E6%A4%A4%E5%9C%AD%E6%B4%B0%E6%BF%AE%E6%97%80%E5%A2%AD%E5%AF%AE%EF%BF%BD%E9%8D%99%E6%88%9D%E6%82%8E%E9%8D%9A%EF%BF%BD%20%281%29.docx" 
+            }
+        };
+        docEditor.setHistoryData(histData[ver - 1]);*/
+    };
+    config.events['onRequestHistoryClose'] = function() {
+        document.location.reload();
+    };
+
+    var сonnectEditor = function() {
+        docEditor = new DocsAPI.DocEditor("iframeEditor", config);
+    };
+
+    //load方法通知父级进行加载
+    var loadParent = function() {
+        window.parent.startChild();
+    }
+    var returnParent = function() {
+        window.parent.returnParent();
+    }
+
+    if (window.addEventListener) {
+        window.addEventListener("load", loadParent);
+        window.addEventListener("unload", returnParent);
+    } else if (window.attachEvent) {
+        window.attachEvent("load", loadParent);
+        window.attachEvent("unload", returnParent);
+    }
+
+    </script>
+</head>
+
+<body>
+    <div class="form">
+        <div id="iframeEditor"></div>
+    </div>
+</body>
+
+</html>

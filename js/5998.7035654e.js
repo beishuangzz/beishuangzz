@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclient=self.webpackChunkclient||[]).push([[5998],{15998:function(e,t,n){n.r(t),n.d(t,{default:function(){return r}});var t={name:"routerViewWrapper"},r=(0,n(1001).Z)(t,function(){var e=this.$createElement;return(this._self._c||e)("router-view")},[],!1,null,"5004f436",null).exports}}]);

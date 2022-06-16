@@ -1,0 +1,155 @@
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link[data-v-80307e3a] {
+  color: #409eff;
+}
+.text-link[data-v-80307e3a]:hover {
+  color: #5cb6ff;
+}
+.text-hover[data-v-80307e3a]:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand[data-v-80307e3a] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib[data-v-80307e3a] {
+  display: inline-block;
+}
+.di[data-v-80307e3a] {
+  display: inline;
+}
+.ellipsis[data-v-80307e3a] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag[data-v-80307e3a] {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag[data-v-80307e3a] {
+  margin-left: 5px;
+}
+.common-tag.green-tag[data-v-80307e3a] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag[data-v-80307e3a] {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag[data-v-80307e3a] {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag[data-v-80307e3a] {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag[data-v-80307e3a] {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+.knowledge-customization .knowledge-update .el-card[data-v-80307e3a] .el-card__body {
+  padding: 0;
+}
+.knowledge-customization .knowledge-update .el-card[data-v-80307e3a] .el-card__body:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.knowledge-customization .knowledge-update .el-card[data-v-80307e3a] .el-card__body .left {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+}
+.knowledge-customization .knowledge-update .el-card[data-v-80307e3a] .el-card__body .left span {
+  vertical-align: middle;
+  display: inline-block;
+}
+.knowledge-customization .knowledge-update .el-card[data-v-80307e3a] .el-card__body .left .icon {
+  color: white;
+  background-color: red;
+  font-size: 12px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 3px;
+  padding: 0 4px;
+  transform-origin: center;
+  transform: scale(0.7);
+  margin-right: 5px;
+}
+.knowledge-customization .knowledge-update .el-card[data-v-80307e3a] .el-card__body .left .message {
+  max-width: 70%;
+  margin-right: 20px;
+}
+.knowledge-customization .knowledge-update .el-card[data-v-80307e3a] .el-card__body .right {
+  float: right;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-left: 1px solid #EBEEF5;
+  cursor: pointer;
+}
+.knowledge-customization .knowledge-update .el-card[data-v-80307e3a] .el-card__body .right .more {
+  width: 100%;
+  font-size: 24px;
+  vertical-align: middle;
+}
+.knowledge-customization .knowledge-subject .el-col[data-v-80307e3a] {
+  margin-bottom: 10px;
+}
+.knowledge-customization .knowledge-subject .el-col .el-card[data-v-80307e3a] {
+  height: 123px;
+  cursor: pointer;
+  position: relative;
+}
+.knowledge-customization .knowledge-subject .el-col .el-card[data-v-80307e3a]:hover {
+  transform-origin: center;
+  transform: scale(1.1);
+  z-index: 5;
+}
+.knowledge-customization .knowledge-subject .el-col .knowledge-subject-card .subject-title > div[data-v-80307e3a] {
+  vertical-align: middle;
+}
+.knowledge-customization .knowledge-subject .el-col .knowledge-subject-card .subject-title .title-icon[data-v-80307e3a] {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  background-color: #46a3e4;
+}
+.knowledge-customization .knowledge-subject .el-col .knowledge-subject-card .subject-title .title-content[data-v-80307e3a] {
+  font-size: 16px;
+  font-weight: bolder;
+  display: inline-block;
+  width: calc(100% - 25px);
+  padding-left: 15px;
+}
+.knowledge-customization .knowledge-subject .el-col .knowledge-subject-card .customization-date[data-v-80307e3a] {
+  text-align: right;
+}
+.knowledge-customization .knowledge-subject .el-col .add-subject-card[data-v-80307e3a] .el-card__body {
+  height: 100%;
+}
+.knowledge-customization .knowledge-subject .el-col .add-subject-card[data-v-80307e3a] .el-card__body .add-subject {
+  height: 100%;
+  text-align: center;
+}
+.knowledge-customization .knowledge-subject .el-col .add-subject-card[data-v-80307e3a] .el-card__body .add-subject span {
+  display: inline-block;
+  vertical-align: middle;
+}
+

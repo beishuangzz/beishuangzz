@@ -1,0 +1,169 @@
+<html>
+
+<head>
+    <meta content="IE=10" http-equiv="X-UA-Compatible" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>首页 - OFFICE文档控件演示示例</title>
+    <link href="officecontrol/ntkoStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+    var ntko; //控件对象
+
+    //初始化去打开文档
+    function init(cmd) {
+        ntko = document.getElementById("TANGER_OCX");
+        //ntko.ToolBars = false;
+        //ntko.TitleBar = false;
+        //ntko.IsShowToolMenu = false;
+        //ntko.CustomToolBar = false;
+        // ntko.Menubar = false;
+        ntko.IsResetToolbarsOnOpen = true;
+        if (window.navigator.platform == "Win64") {
+            //alert("平台版文档控件，请使用32位浏览器如IE");
+            //TANGER_OCX_OBJ.AddDocTypePlugin(".tif","tif.NtkoDocument","4.0.1.0","officecontrol/ntkooledocallx64.cab",51,true);    
+            ntko.AddDocTypePlugin(".pdf", "PDF.NtkoDocument", "4.0.2.0", "officecontrol/ntkooledocallx64.cab", 51, true);
+
+        } else {
+            ntko.AddDocTypePlugin(".pdf", "PDF.NtkoDocument", "4.0.2.0", "officecontrol/ntkooledocall.cab", 51, true); //版增加对于PDF文件的支持
+            //TANGER_OCX_OBJ.AddDocTypePlugin(".tif","tif.NtkoDocument","4.0.1.0","officecontrol/ntkooledocallx64.cab",51,true);    
+        }
+        if (cmd == 1) {
+            ntko.OpenFromURL("ntkocreatnew.docx");
+        } else {
+            //ntko.OpenFromURL("aboutus.docx");
+            //ntko.OpenFromURL(getQueryString("url"));
+            ntko.OpenFromURL(getQueryString("url"), getQueryString("edit")=='false');
+            if (getQueryString("edit")=='false') {//如果是详情按钮进来页面的
+                ntko.SetReadOnly(true);
+                document.getElementById('divTopSave').style.display = 'none';
+            } else if (getQueryString("lock")) {//如果是编辑按钮进来页面的
+                alert('该文档已锁定, 为只读状态!');
+            } else {
+                var customerSocket = ('https:' == document.location.protocol ? 'wss://': 'ws://');
+                window.mySocket = new WebSocket(customerSocket + window.location.host + '/fileWS' + '?fileobjectid=' + getQueryString('id') + '&userid=' + getQueryString('userid'));
+            }
+            
+            //ntko.OpenLocalFile("C:/Users/dell/Desktop/文档/测试用技术开发（委托）合同版-2(1).docx");
+        }
+        ntko.TrackRevisions(true);
+        ntko.ActiveDocument.Protect(0, true, "password") ;
+    }
+
+    function save() {
+        if (getQueryString("edit")=='false') {
+            alert('该文档为只读状态!');
+        }
+        var res = ntko.SaveToURL((getQueryString('httpCode') + '/law/office/ntkoofficeonline/saveFile/' + getQueryString('id')), 'file');
+        var message = eval('(' + res + ')');
+        alert(message.message);
+        ntkoBrowser.ntkoSetReturnValueToParentPage("NTKOClose", getQueryString('id'));
+    }
+    
+    var cmd; //命令类型
+    var datatext;
+    var datavalue;
+
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+
+        return null;
+
+    }
+
+    function CurentTime() {
+        var now = new Date();
+
+        var year = now.getFullYear(); //年
+        var month = now.getMonth() + 1; //月
+        var day = now.getDate(); //日
+
+        var hh = now.getHours(); //时
+        var mm = now.getMinutes(); //分
+        var ss = now.getSeconds(); //分
+
+        var clock = year + "-";
+
+        if (month < 10)
+            clock += "0";
+
+        clock += month + "-";
+
+        if (day < 10)
+            clock += "0";
+
+        clock += day + " ";
+
+        if (hh < 10)
+            clock += "0";
+
+        clock += hh + ":";
+        if (mm < 10) clock += '0';
+        clock += mm + ":";
+        if (ss < 10) clock += '0';
+        clock += ss;
+        return (clock);
+    }
+
+    //在子页面定义的向父页面回传值的方法，方法名可以自定义
+    function ntkoSendDataToParentPage() {
+        var varData = new Array();
+        varData.push(ntko.docsize);
+        varData.push(CurentTime());
+        ntkoBrowser.ntkoSetReturnValueToParentPage("OnData", varData);
+
+    }
+
+    function ntkoDataToChild(data) {
+        ntko.SetBookmarkValue("ntko", data);
+        var ntkoc = ntko.ActiveDocument.bookMarks.count;
+        for (var i = 1; i <= ntkoc; i++) {
+            var ntkoname = ntko.ActiveDocument.bookMarks.item(i).name;
+            if (ntkoname == "ntko") {
+                ntko.ActiveDocument.bookMarks.item(i).select();
+                ntko.ActiveDocument.Application.Selection.Font.Color = 255;
+                ntko.ActiveDocument.Application.Selection.Font.Bold = 9999998;
+                ntko.ActiveDocument.Application.Selection.Font.Size = 16;
+            }
+        }
+    }
+
+    function ntkoGetParentData(data) { //该方法用于接收父页面传递的值
+        datatext = data;
+    }
+
+    function saveAsPdf() { //保存为pdf
+        ntko.SaveAsPDFFile('111.pdf');
+    }
+
+    function ntkocloseparentpage() {
+        if (cmd == 4) {
+            ntkoSendDataToParentPage();
+        }
+    }
+    </script>
+</head>
+
+<body onload="cmd=getQueryString('cmd');init(cmd);" onbeforeunload="ntkocloseparentpage()">
+    <script type="text/javascript" for="TANGER_OCX" event="OnDocumentOpened(File, Document)">
+    if (cmd == 5) {
+        ntko.ShowTipMessage("注意", "已经接收到父页面传过来的值,请注意文档中内容的变化");
+        ntkoDataToChild(datatext);
+    }
+    </script>
+    <div class="divTop">
+        <div class="divTopInner">
+            <div class="divTopInnerCaption">天津市道本科技有限公司</div>
+            <div class="divTopSave" id="divTopSave" onclick="save()">保存
+            </div>
+
+            <div class="divTopSave" id="divTopSave" onclick="saveAsPdf()">保存pdf
+            </div>
+        </div>
+    </div>
+    <div class="divBody">
+        <script type="text/javascript" src="officecontrol/ntkoofficecontrol.min.js"></script>
+    </div>
+</body>
+
+</html>

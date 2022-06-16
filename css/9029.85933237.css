@@ -1,0 +1,76 @@
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link[data-v-5acbc43b] {
+  color: #409eff;
+}
+.text-link[data-v-5acbc43b]:hover {
+  color: #5cb6ff;
+}
+.text-hover[data-v-5acbc43b]:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand[data-v-5acbc43b] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib[data-v-5acbc43b] {
+  display: inline-block;
+}
+.di[data-v-5acbc43b] {
+  display: inline;
+}
+.ellipsis[data-v-5acbc43b] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag[data-v-5acbc43b] {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag[data-v-5acbc43b] {
+  margin-left: 5px;
+}
+.common-tag.green-tag[data-v-5acbc43b] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag[data-v-5acbc43b] {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag[data-v-5acbc43b] {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag[data-v-5acbc43b] {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag[data-v-5acbc43b] {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+.review-element-detail .review-element-fields .el-card[data-v-5acbc43b] {
+  display: inline-block;
+  margin: 0 5px;
+  width: calc(20% - 10px);
+  float: left;
+}
+.review-element-detail .review-element-fields .el-card .field-title[data-v-5acbc43b] {
+  color: #546784;
+}
+.review-element-detail .review-element-fields .el-card .field-detail[data-v-5acbc43b] {
+  margin-top: 10px;
+}
+.review-element-detail .review-element-fields .el-card .field-detail .value[data-v-5acbc43b] {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+

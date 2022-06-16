@@ -1,0 +1,133 @@
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link[data-v-2261251b] {
+  color: #409eff;
+}
+.text-link[data-v-2261251b]:hover {
+  color: #5cb6ff;
+}
+.text-hover[data-v-2261251b]:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand[data-v-2261251b] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib[data-v-2261251b] {
+  display: inline-block;
+}
+.di[data-v-2261251b] {
+  display: inline;
+}
+.ellipsis[data-v-2261251b] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag[data-v-2261251b] {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag[data-v-2261251b] {
+  margin-left: 5px;
+}
+.common-tag.green-tag[data-v-2261251b] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag[data-v-2261251b] {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag[data-v-2261251b] {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag[data-v-2261251b] {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag[data-v-2261251b] {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+.wrapper[data-v-2261251b] .diagram {
+  display: inline-block;
+}
+.wrapper[data-v-2261251b] .diagram path,
+.wrapper[data-v-2261251b] .diagram line {
+  fill: none;
+  stroke: #000;
+}
+.wrapper[data-v-2261251b] .diagram > svg {
+  border: 1px solid red;
+}
+
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link {
+  color: #409eff;
+}
+.text-link:hover {
+  color: #5cb6ff;
+}
+.text-hover:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib {
+  display: inline-block;
+}
+.di {
+  display: inline;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag {
+  margin-left: 5px;
+}
+.common-tag.green-tag {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+path line {
+  fill: none;
+  stroke: #000;
+}
+

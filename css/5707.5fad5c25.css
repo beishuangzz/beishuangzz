@@ -1,0 +1,108 @@
+/*
+全局变量, 可以在组件内样式使用
+ */
+.text-link[data-v-5de2044a] {
+  color: #409eff;
+}
+.text-link[data-v-5de2044a]:hover {
+  color: #5cb6ff;
+}
+.text-hover[data-v-5de2044a]:hover {
+  cursor: pointer;
+  color: #5cb6ff;
+  transition: color 0.15s linear;
+}
+.hand[data-v-5de2044a] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dib[data-v-5de2044a] {
+  display: inline-block;
+}
+.di[data-v-5de2044a] {
+  display: inline;
+}
+.ellipsis[data-v-5de2044a] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.common-tag[data-v-5de2044a] {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: rgba(0, 204, 255, 0.2);
+  color: #606266;
+}
+.common-tag + .common-tag[data-v-5de2044a] {
+  margin-left: 5px;
+}
+.common-tag.green-tag[data-v-5de2044a] {
+  background-color: rgba(51, 255, 0, 0.2);
+}
+.common-tag.cyan-tag[data-v-5de2044a] {
+  background-color: rgba(0, 204, 255, 0.2);
+}
+.common-tag.yellow-tag[data-v-5de2044a] {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.common-tag.light-blue-tag[data-v-5de2044a] {
+  background-color: rgba(51, 102, 255, 0.2);
+}
+.common-tag.brown-tag[data-v-5de2044a] {
+  background-color: rgba(255, 153, 0, 0.2);
+}
+.specification-clause-detail .clause-sample .el-col[data-v-5de2044a] {
+  height: 100%;
+}
+.specification-clause-detail .clause-sample .el-col .el-card[data-v-5de2044a] {
+  height: 100%;
+}
+.specification-clause-detail .clause-sample .el-col .el-card .clause-sample-list .clause-sample-item + .clause-sample-item[data-v-5de2044a] {
+  margin-top: 15px;
+}
+.specification-clause-detail .clause-sample .el-col .el-card .clause-sample-list .clause-sample-item .clause-sample-title span[data-v-5de2044a] {
+  display: inline-block;
+  background-color: rgba(255, 255, 0, 0.2);
+  padding: 0 5px;
+  line-height: 30px;
+  border-radius: 3px;
+}
+.specification-clause-detail .clause-sample .el-col .el-card .clause-sample-list .clause-sample-item .clause-sample-detail[data-v-5de2044a] {
+  margin-top: 5px;
+  line-height: 23px;
+}
+.specification-clause-detail .clause-sample .el-col .el-card .clause-sample-list .clause-sample-item .clause-sample-detail .copy-clause[data-v-5de2044a] {
+  text-align: right;
+  line-height: 30px;
+  color: #3366cc;
+  padding-right: 10px;
+}
+.specification-clause-detail .clause-sample .el-col .el-card .clause-sample-list .clause-sample-item .clause-sample-detail .copy-clause i[data-v-5de2044a] {
+  margin-right: 5px;
+}
+.specification-clause-detail .clause-sample .clause-context[data-v-5de2044a] {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.specification-clause-detail .clause-sample .clause-context .el-card[data-v-5de2044a] {
+  height: 100%;
+}
+.specification-clause-detail .clause-sample .clause-context .el-card[data-v-5de2044a] .el-card__body {
+  height: 100%;
+}
+.specification-clause-detail .clause-sample .clause-context .el-card[data-v-5de2044a] .el-card__body .open-line-height {
+  height: 100%;
+  text-align: center;
+}
+.specification-clause-detail .clause-sample .clause-context .el-card[data-v-5de2044a] .el-card__body .open-line-height span {
+  vertical-align: middle;
+  display: inline-block;
+  color: #20A0FF;
+}
+
